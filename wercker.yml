@@ -32,3 +32,6 @@ build:
         # - script:
         #        name: rspec
         #        code: bundle exec rspec
+        - script:
+            name: assets precomipile
+            code: bundle exec rake assets:precompile
