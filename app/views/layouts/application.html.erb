@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class='header'>
+	<div class='logo'>
+		<%= link_to 'Thi Duong', controller: 'profile' %>
+	</div>
+	<div class='menu'>
+		<span class="<%= 'active' if params[:controller] == 'resume' && params[:action] == 'index' %>"> <%= link_to 'Résumé',
+                                                                                                                    controller: 'resume'%></span>
+		<span class="<%= 'active' if params[:controller] == 'profile' && params[:action] == 'contact' %>"> <%= link_to 'Contact',
+                                                                                                                       controller: 'profile',
+                                                                                                                       action: 'contact' %></span>
+	</div>
+</div>
+
+<%= yield %>
+
+</body>
+</html>
