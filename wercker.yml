@@ -33,9 +33,9 @@ build:
         #        name: rspec
         #        code: bundle exec rspec
 
-        - script:
-            name: database reset
-            code: bundle exec rake db:reset
+#        - script:
+#            name: database reset
+#            code: bundle exec rake db:reset
 
         - script:
             name: database migration
