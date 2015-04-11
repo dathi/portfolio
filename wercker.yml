@@ -15,10 +15,6 @@ build:
 
         # A step that executes `bundle install` command
         - bundle-install
-        
-        - script:
-            name: database migration
-            code: bundle exec rake db:migrate
 
         # A step that prepares the database.yml using the database in services
         # - rails-database-yml
@@ -36,6 +32,15 @@ build:
         # - script:
         #        name: rspec
         #        code: bundle exec rspec
+
+        - script:
+            name: database reset
+            code: bundle exec rake db:reset
+
+        - script:
+            name: database migration
+            code: bundle exec rake db:migrate
+
         - script:
             name: assets precomipile
             code: bundle exec rake assets:precompile
