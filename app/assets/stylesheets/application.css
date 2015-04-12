@@ -15,43 +15,47 @@
  */
 
 html {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     font-family: helvetica, verdana, arial, sans-serif;
 }
 
 .header {
-	height: 80px;
-	line-height: 80px;
-	border-bottom: solid 1px;
-	margin-bottom: 10px;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: solid 1px;
+    margin-bottom: 10px;
 }
 
 .header a {
-	text-decoration: none;	
-	color: black;	
+    text-decoration: none;
+    color: black;
 }
 
 .logo {
-	font-size: 48px;
-	font-family: cursive;
-	font-weight: bolder;
-	float: left;
+    font-size: 48px;
+    font-family: cursive;
+    font-weight: bolder;
+    float: left;
 }
 
 .menu {
-	font-size: 16px;
-	float: right;
+    font-size: 16px;
+    float: right;
 }
 
 .menu a {
-	font-weight: normal;
-	color: #cb4154;	
-	margin-right: 10px;
+    font-weight: normal;
+    color: #c75f1d;
+    margin-right: 10px;
+}
+
+.menu a:hover {
+    background-color: #f4dab4;
 }
 
 .active {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 

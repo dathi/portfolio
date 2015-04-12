@@ -12,8 +12,8 @@
 		<%= link_to 'Thi Duong', controller: 'profile' %>
 	</div>
 	<div class='menu'>
-		<span class="<%= 'active' if params[:controller] == 'resume' && params[:action] == 'index' %>"> <%= link_to 'Résumé',
-                                                                                                                    controller: 'resume'%></span>
+		<span class="<%= 'active' if params[:controller] == 'resumes' && params[:action] == 'index' %>"> <%= link_to 'Résumé',
+                                                                                                                    controller: 'resumes'%></span>
 		<span class="<%= 'active' if params[:controller] == 'profile' && params[:action] == 'contact' %>"> <%= link_to 'Contact',
                                                                                                                        controller: 'profile',
                                                                                                                        action: 'contact' %></span>

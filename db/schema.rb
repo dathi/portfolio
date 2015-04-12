@@ -11,14 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150411114013) do
+ActiveRecord::Schema.define(version: 20150412072335) do
 
   create_table "resumes", force: true do |t|
-    t.string   "position",    null: false
-    t.string   "company",     null: false
+    t.string   "position"
+    t.string   "company"
     t.text     "description"
     t.datetime "date_from"
     t.datetime "date_to"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

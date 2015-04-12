@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :resumes do
+    member do
+      get 'resume' => 'index'
+    end
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -6,12 +12,6 @@ Rails.application.routes.draw do
   root 'profile#index'
   get 'contact' => 'profile#contact'
   get 'admin' => 'profile#admin'
-
-  resources :resume do
-    member do
-      get 'resume' => 'index'
-    end
-  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

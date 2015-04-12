@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @resume.position %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @resume.company %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @resume.description %>
+</p>
+
+<p>
+  <strong>Date from:</strong>
+  <%= @resume.date_from %>
+</p>
+
+<p>
+  <strong>Date to:</strong>
+  <%= @resume.date_to %>
+</p>
+
+<%= link_to 'Edit', edit_resume_path(@resume) %> |
+<%= link_to 'Back', resumes_path %>
