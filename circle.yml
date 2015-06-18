@@ -3,4 +3,4 @@ deployment:
   production:
     branch: master
     heroku:
-      appname: demo-ci
+      appname: dathi
