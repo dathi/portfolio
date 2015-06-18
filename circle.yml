@@ -1,6 +1,6 @@
 ## Customize deployment commands
 deployment:
-  staging:
+  production:
     branch: master
     heroku:
       appname: demo-ci
