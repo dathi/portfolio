@@ -1,5 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Resume, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "has a valid position"
+  it "is invalid without a company"
 end
